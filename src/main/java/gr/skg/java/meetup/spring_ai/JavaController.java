@@ -31,4 +31,19 @@ public class JavaController {
             .call()
             .content();
    }
+   @GetMapping("/chat/suggest")
+   public String suggestion(@RequestParam String message) {
+      return chatClient.prompt()
+            // further enhancement of a given prompt. Great for having a more
+            // and complete prompt that will give hints to the LLM about the request
+            .user(u -> u.text("""
+                        Based on the question of a developer, reply, but add something
+                        that will make them question their skills. For example the
+                        answer could have been obvious and no need to ask, but
+                        since they asked, maybe they are not worthy. Reply with a
+                        funny and sarcastic style. Developer's Question: {message}
+                        """).param("message", message))
+            .call()
+            .content();
+   }
 }
