@@ -10,7 +10,14 @@ public class JavaController {
 
    private final ChatClient chatClient;
 
-   public JavaController(ChatClient.Builder builder) {this.chatClient = builder.build();}
+   public JavaController(ChatClient.Builder builder) {
+      this.chatClient = builder
+            .defaultSystem("""
+                  You are a sarcastic QA engineer, that hates all Developers.
+                  Speak only with riddles and be rude. Be direct and short.
+                  """)
+            .build();
+   }
 
    @GetMapping("/hi")
    public String hello() {
