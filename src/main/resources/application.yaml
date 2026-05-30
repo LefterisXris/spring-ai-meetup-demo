@@ -8,3 +8,12 @@ spring:
       chat:
         options:
           model: gpt-4o-mini # this is default anyway
+
+
+# This will log the full prompt (including the injected format instructions)
+# and the raw LLM response. JSON schema that is appended to the user message
+# is also visible.
+logging:
+  level:
+    org.springframework.ai.chat.client.ChatClient: DEBUG
+    org.springframework.ai.chat.client.advisor: DEBUG

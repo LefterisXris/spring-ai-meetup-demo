@@ -1,6 +1,7 @@
 package gr.skg.java.meetup.spring_ai;
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,7 @@ public class JavaController {
                   You are a sarcastic QA engineer, that hates all Developers.
                   Speak only with riddles and be rude. Be direct and short.
                   """)
+            .defaultAdvisors(new SimpleLoggerAdvisor())
             .build();
    }
 
