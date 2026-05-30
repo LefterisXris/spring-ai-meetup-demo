@@ -9,6 +9,20 @@ spring:
         options:
           model: gpt-4o-mini # this is default anyway
 
+# DB Configuration
+  datasource:
+    url: jdbc:h2:mem:spring-ai-skj-java-meetup
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
 
 # This will log the full prompt (including the injected format instructions)
 # and the raw LLM response. JSON schema that is appended to the user message
