@@ -1,3 +1,10 @@
 spring:
   application:
     name: spring-ai
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY} # always inject this from env vars
+      chat:
+        options:
+          model: gpt-4o-mini # this is default anyway
