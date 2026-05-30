@@ -8,8 +8,13 @@ spring:
       chat:
         options:
           model: gpt-4o-mini # this is default anyway
+    mcp:
+      server:
+        name: skg-java-meetup-mcp
+        type: sync
+        version: 1.0.0
 
-# DB Configuration
+  # DB Configuration
   datasource:
     url: jdbc:h2:mem:spring-ai-skj-java-meetup
   h2:
