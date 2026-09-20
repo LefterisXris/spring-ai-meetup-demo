@@ -8,6 +8,10 @@ The project builds an intelligent **Meetup Community Assistant** that can query 
 
 [![Workshop Guide](https://img.shields.io/badge/%F0%9F%93%96_Workshop_Guide-Read_the_step--by--step_tutorial-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://lefterisxris.github.io/spring-ai-meetup-demo/workshop-guide.html)
 
+<a href="https://lefterisxris.github.io/spring-ai-meetup-demo/workshop-guide.html">
+  <img src="docs/images/workshop_page_preview.png" alt="Workshop Guide preview" width="800">
+</a>
+
 </div>
 
 > [!TIP]
