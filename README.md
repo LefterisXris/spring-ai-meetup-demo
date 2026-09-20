@@ -4,6 +4,17 @@ A progressive, hands-on demo built for the [SKG Java Meetup](https://www.meetup.
 
 The project builds an intelligent **Meetup Community Assistant** that can query members, search by name, RSVP to events, and more -- all through natural language.
 
+<div align="center">
+
+[![Workshop Guide](https://img.shields.io/badge/%F0%9F%93%96_Workshop_Guide-Read_the_step--by--step_tutorial-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://lefterisxris.github.io/spring-ai-meetup-demo/workshop-guide.html)
+
+</div>
+
+> [!TIP]
+> **New here? Start with the Workshop Guide!**
+> A complete, step-by-step walkthrough (with screenshots) for building this project from scratch:
+> **https://lefterisxris.github.io/spring-ai-meetup-demo/workshop-guide.html**
+
 ## Tech Stack
 
 | Component    | Version       |
@@ -166,7 +177,11 @@ Exposes the same tools over the Model Context Protocol, allowing external AI cli
 
 ## Workshop Guide
 
-A comprehensive step-by-step guide is available for reproducing this workshop. See the `workshop_guide/` directory or ask the presenters for a copy.
+A comprehensive step-by-step guide for reproducing this workshop is hosted on GitHub Pages:
+
+**[https://lefterisxris.github.io/spring-ai-meetup-demo/workshop-guide.html](https://lefterisxris.github.io/spring-ai-meetup-demo/workshop-guide.html)**
+
+The source lives in the [`docs/`](docs/) directory (`workshop-guide.md` / `workshop-guide.html`).
 
 ## Resources
 
